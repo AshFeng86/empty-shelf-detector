@@ -9,7 +9,8 @@ Detect empty/out-of-stock areas in shelf photos and reports the number of gaps a
 - Dataset: Roboflow "Supermarket Empty Shelf Detector" (~500 images, single class)
 - Model: YOLO11n, fine-tuned 50 epochs on Colab T4
 - v1 (Claude version): mAP50: 0.884 | mAP50-95: 0.615
-- v2 (Redo version): mAP50: 0.884 | mAP50-95: 0.615
+- v2 (Redo version - epochs 50): mAP50: 0.884 | mAP50-95: 0.615
+- v2 (Redo version - epochs 100): mAP50: 0.91 | mAP50-95: 0.656
 The redo version has the same output as AI (Claude) version. However, the empty shelf detection rate drops significantly while encountering my retail images. (only 2 out of 7 images have found empty shelves, not to mention many empty shelves are not being labeled).
 
 ## Real-world test
